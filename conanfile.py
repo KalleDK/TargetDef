@@ -15,6 +15,7 @@ class TargetdefConan(ConanFile):
 
     def build(self):
         cmake = CMake(self)
+        cmake.definitions["TARGET_TYPE"] = self.options.target
         cmake.configure()
         cmake.build()
         cmake.install()

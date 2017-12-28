@@ -3,5 +3,5 @@
 
 int main(int argc, char* argv[])
 {
-  std::cout << demo() << std::endl;
+  std::cout << "Hola: " << (int)demo() << std::endl;
 }
