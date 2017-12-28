@@ -18,4 +18,5 @@ class TargetdefTestConan(ConanFile):
     def test(self):
         os.chdir("bin")
         suffix = ".exe" if self.settings.os == "Windows" else ""
-        self.run("./testdef" + suffix)
+        prefix = "" if self.settings.os == "Windows" else "./"
+        self.run(prefix + "testdef" + suffix)
