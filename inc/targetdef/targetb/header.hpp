@@ -1,0 +1,6 @@
+#ifndef TARGETDEF_TARGET_B_HEADER_HPP
+#define TARGETDEF_TARGET_B_HEADER_HPP
+
+int demo();
+
+#endif
